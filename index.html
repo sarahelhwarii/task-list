@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="materialize.min.css" />
+    <link rel="stylesheet" href="font-awesome.min.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <title>Task List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="card-content" id="main">
+            <span class="card-title">Task List</span>
+            <div class="row">
+              <form class="task-form">
+                <div class="input-field s12 col">
+                  <p class="msg"></p>
+                  <input type="text" name="task" id="task" />
+                  <label for="task">New Task</label>
+                </div>
+                <input type="submit" value="Add Task" class="btn" />
+              </form>
+            </div>
+          </div>
+          <div class="card-action">
+            <h5 class="task-title">Tasks</h5>
+            <div class="input-field s12 col">
+              <input type="text" name="filter" id="filter" />
+              <label for="filter">Filter</label>
+            </div>
+            <ul class="collection">
+              <a href="#" class="clear-tasks btn yellow">Clear Tasks</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="jquery-3.2.1.js"></script>
+    <script src="materialize.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
